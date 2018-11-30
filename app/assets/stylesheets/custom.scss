@@ -54,10 +54,10 @@ p {
 
 #logo {
   float: left;
-  margin-right: 10px;
+  margin-right: 12px;
   font-size: 1.7em;
   color: #fff;
-  text-transform: uppercase;
+  // text-transform: uppercase;
   letter-spacing: -1px;
   padding-top: 9px;
   font-weight: bold;
@@ -74,7 +74,8 @@ footer {
   margin-top: 45px;
   padding-top: 5px;
   border-top: 1px solid #eaeaea;
-  color: #777;
+  // color: #777;
+  color: rgb(128,0,0);
 }
 
 footer a {
@@ -185,7 +186,7 @@ input {
 }
 
 .checkbox {
-  margin-top: -10px;
+  margin-top: 0px;
   margin-bottom: 10px;
   span {
     margin-left: 20px;
@@ -196,4 +197,39 @@ input {
 #session_remember_me {
   width: auto;
   margin-left: 0;
+}
+
+.navbar-inverse {
+     background-color: rgb(128,0,0);
+     border-color: #080808;
+}
+
+
+form {
+  margin:0 auto;
+  width:300px
+}
+input {
+  margin-bottom:3px;
+  padding:10px;
+  width: 100%;
+  border:1px solid #CCC
+}
+button {
+  padding:10px
+}
+label {
+  cursor:pointer
+}
+#form-switch {
+  display:none
+}
+#register-form {
+  display:none
+}
+#form-switch:checked~#register-form {
+  display:block
+}
+#form-switch:checked~#login-form {
+  display:none
 }
